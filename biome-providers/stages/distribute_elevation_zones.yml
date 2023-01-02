@@ -1,0 +1,29 @@
+
+# Splits land and coastal zones into different elevation zones.
+# These elevation zones are further divided into temperature zones
+# in the distribute_temperature_zones.yml file.
+
+elevation-map: &elevation-map
+  type: IMAGE
+  image: images/elevation.png
+  channel: GRAYSCALE
+  frequency: 1
+
+stages:
+  - type: REPLACE_LIST
+    sampler: *elevation-map
+
+    default-from: coast
+    default-to:
+      - coast-flat: 6
+      - coast-hills: 5
+      - coast-hills: 4
+      - coast-mountains-small: 5
+      - coast-mountains-large: 6
+    to:
+      land:
+        - flat: 6
+        - hills-small: 5
+        - hills-large: 4
+        - mountains-small: 5
+        - mountains-large: 6

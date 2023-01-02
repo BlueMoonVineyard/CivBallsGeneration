@@ -1,0 +1,13 @@
+source:
+  type: SAMPLER
+  biomes:
+    - deep-ocean: 6
+    - deep-ocean-border: 2 # Used for the border of deep ocean island biomes crossing into regular ocean
+    - ocean: 7
+    - coast: 2 # Used for the border of land biomes crossing into ocean
+    - land: 83
+  sampler:
+    type: IMAGE
+    image: images/elevation.png
+    channel: GRAYSCALE
+    frequency: 1
