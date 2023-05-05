@@ -86,8 +86,8 @@ stages:
   - id: slabs # Adds slab versions of some blocks to make terrain look smoother
     type: FEATURE
 
-  - id: ores # Self-explanatory - used to generate ores
-    type: FEATURE
+#  - id: ores # Self-explanatory - used to generate ores
+#    type: FEATURE
 
   - id: deposits # Adds things like dirt, andesite and gravel patches
     type: FEATURE

@@ -41,7 +41,7 @@ biomes:
       # ---
       # Assign zones for volcanic biomes
       # - Comment the following line to disable volcano generation.
-      - << biome-providers/stages/add_volcanic_zones.yml:stages
+      # - << biome-providers/stages/add_volcanic_zones.yml:stages
       # ---
 
       # ---
